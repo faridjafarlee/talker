@@ -15,7 +15,7 @@ speedInput.addEventListener('input', () => {
   playText(utterance.text.substring(currentCharacter));
 });
 
-const utterance = new SpeechSynthesisUtterance(text);
+const utterance = new SpeechSynthesisUtterance();
 utterance.addEventListener('end', () => {
   textInput.disabled = false;
 });
